@@ -152,13 +152,9 @@ body {
 	margin-bottom: 10px;
 }
 
-#projects h2 {
+#projects h2, #posts h2 {
 	color: #65B900;
 	font-size: 1.8em;
-}
-
-#posts .title {
-	font-size: 2em;
 }
 
 #posts h1 {
