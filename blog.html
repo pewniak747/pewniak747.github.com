@@ -12,12 +12,12 @@ description: my blog
 		<a href="{{ post.url }}" title="{{ post.title }}">
     <h2><span class="title">{{ post.title }}</span></h2>
     </a>
-    <span class="date">
-    <span class="day">{{ post.date | date: '%d' }}</span> 
-    <span class="month"><abbr>{{ post.date | date: '%b' }}</abbr></span>
-		<span class="year">{{ post.date | date: '%Y' }}</span>
+    <span class="date">published 
+		{{ post.date | date: '%d' }}
+    {{ post.date | date: '%b' }}
+		{{ post.date | date: '%Y' }}
     </span>
-    <span class="post_content">{{ post.content }}</span>
+    <!--<span class="post_content">{{ post.content }}</span>-->
 
   </li>
 {% endfor %}

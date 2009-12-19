@@ -52,9 +52,14 @@ body {
 #header #avatar {
 	width: 50px;
 	height: 50px;
-	background-image: url("avatar.jpg");
+	margin-top: 10px;
+	background-image: url("/avatar.jpg");
 	border: 2px solid #4D4D4D;
 	float: right;
+}
+
+#header #avatar:hover {
+	background-image: url("/avatar_hover.jpg");
 }
 
 #head {
@@ -66,11 +71,10 @@ body {
 	height: 37px;
 	margin: 0;
 	padding: 0;
-	/*background-color: #4D4D4D;*/
 	border-top: 2px solid #4D4D4D;
 }
 
-#nav li, ul {
+#nav li, #nav ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -141,24 +145,40 @@ body {
 	font-weight: bold;
 }
 
+#content p {
+	margin: 7px 0 7px 0;
+}
+
 #content pre {
 	padding: 5px 0 5px 10px;
 	border-left: 3px solid white;
 	background-color: #4A4A4A;
 }
 
-#projects li, #posts li {
-	border-top: 2px solid #4D4D4D;
-	margin-bottom: 10px;
-}
-
 #projects h2, #posts h2 {
 	color: #65B900;
 	font-size: 1.8em;
+	display: inline;
 }
 
-#posts h1 {
-	font-size: 1.5em;
+#content #projects li, #content #projects {
+	list-style: none;
+	border-top: 2px solid #4D4D4D;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+#posts {
+	list-style: square;
+}
+
+#posts h2 {
+	font-size: 1em;
+}
+
+#posts .date {
+	font-size: 0.7em;
 }
 
 #footer {
