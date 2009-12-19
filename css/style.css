@@ -66,6 +66,14 @@ body {
 	padding: 30px;
 }
 
+#head a {
+	text-decoration: none;
+}
+
+#head a:hover {
+	background-color: #393939;
+}
+
 #nav {
 	width: 100%;
 	height: 37px;
@@ -161,12 +169,16 @@ body {
 	display: inline;
 }
 
-#content #projects li, #content #projects {
+#content #projects {
+	list-style: none;
+	margin: 0;
+	padding: 0; 
+}
+#content #projects li {
 	list-style: none;
 	border-top: 2px solid #4D4D4D;
 	margin: 0;
-	padding: 0;
-	margin-bottom: 10px;
+	padding: 10px 0 10px 0;
 }
 
 #posts {
@@ -177,8 +189,14 @@ body {
 	font-size: 1em;
 }
 
-#posts .date {
+.date {
 	font-size: 0.7em;
+}
+
+.post_title {
+	color: #65B900;
+	font-size: 1.8em;
+	display: inline;
 }
 
 #footer {
@@ -187,8 +205,7 @@ body {
 	border-top: 1px solid #4D4D4D;
 	margin: 0;
 	padding: 5px;
-	font-size: 10px;
-	font-family: "Fixed";
+	font-size: 12px;
 }
 
 #footer a {
