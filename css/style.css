@@ -159,8 +159,12 @@ body {
 
 #content pre {
 	padding: 5px 0 5px 10px;
-	border-left: 3px solid white;
-	background-color: #4A4A4A;
+	border-left: 3px solid #65B900;
+	background-color: #232323;
+}
+
+#content .terminal {
+	border: 1px dashed #7F7F7F;
 }
 
 #projects h2, #posts h2 {

@@ -9,13 +9,21 @@ p. This is my first post on my blog. I'm just gonna do some testing...
 
 p. There goes some code...
 
-{%  highlight ruby %}
-
+{% highlight ruby %}
 def say_hi name
   puts "Hello, #{name}"
 end
-
 {% endhighlight %}
+
+{% highlight c++ %}
+#include <iostream>
+int main() {
+	std::cout << "Hello world!\n";
+}
+{% endhighlight %}
+
+pre(terminal). $ sudo apt-get update
+$ sudo apt-get upgrade
 
 p. I like that:)
 
