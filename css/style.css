@@ -186,7 +186,7 @@ body {
 }
 
 #posts {
-	list-style: square;
+	list-style: circle red;
 }
 
 #posts h2 {
