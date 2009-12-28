@@ -1,0 +1,17 @@
+---
+layout: post
+title: Windows 7-like window list in GNOME
+---
+!http://www.askdrtech.com/solutions/image.axd?picture=2009%2F10%2FWin7-task-bar-1.png!
+
+How to get a window list that displays icons only in GNOME? Easy:)
+
+* Go "there":http://ubuntu-ky.ubuntuforums.org/showthread.php?t=986338 and download taskdock-0.0.2.tar.gz (attachment to the firs post). You must register on ubuntuforums, but that's painless.
+* Install dependencies: libpanelappletmm-2.6-dev and libwnck-dev from repositories
+* Extract the *.tar.gz file and go there in terminal.
+* type 
+
+pre(terminal). $ make
+$ sudo make install
+
+* right-click on your gnome-panel, add taskdock and enjoy!:)
