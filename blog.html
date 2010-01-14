@@ -2,23 +2,22 @@
 layout: main
 title: My blog
 description: my blog
+class: blog
 ---
-<h1 class="color2">My blog</h1>
-
-
-<ul id="posts">
+<h1>my blog</h1>
+<p>programming, hacking, internet | <a href="#">rss (dead)</a></p>
+<ul>
 {% for post in site.posts %}
 	<li>
 		<a href="{{ post.url }}" title="{{ post.title }}">
-    <h2><span class="title">{{ post.title }}</span></h2>
-    </a>
+    <h2><span class="title">{{ post.title }}</span>
+    </a> 
     <span class="date">published 
 		{{ post.date | date: '%d' }}
     {{ post.date | date: '%b' }}
 		{{ post.date | date: '%Y' }}
     </span>
-    <!--<span class="post_content">{{ post.content }}</span>-->
-
+		</h2>
   </li>
 {% endfor %}
 </ul>
