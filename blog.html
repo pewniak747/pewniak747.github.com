@@ -5,18 +5,13 @@ description: my blog
 class: blog
 ---
 <h1>my blog</h1>
-<p>programming, hacking, internet | <a href="#">rss (dead)</a></p>
+<p>programming, hacking, internet | <a href="#">rss</a><small>(dead)</small></p>
 <ul>
 {% for post in site.posts %}
 	<li>
-		<a href="{{ post.url }}" title="{{ post.title }}">
-    <h2><span class="title">{{ post.title }}</span>
-    </a> 
-    <span class="date">published 
-		{{ post.date | date: '%d' }}
-    {{ post.date | date: '%b' }}
-		{{ post.date | date: '%Y' }}
-    </span>
+    <h2>
+    <span class="date">{{ post.date | date: '%d %b %Y' }}</span>&nbsp;
+    <a href="{{ post.url }}" title="{{ post.title }}"><span class="title">{{ post.title }}</span></a> 
 		</h2>
   </li>
 {% endfor %}

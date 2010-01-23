@@ -10,7 +10,8 @@ body {
 	width: 800px;
 	background-color: #353535;
 	margin: auto;
-	padding: 10px;
+	padding: 15px;
+	border: 1px solid #3D3D3D;
 }
 
 #top {
@@ -37,11 +38,10 @@ body {
 	font-weight: normal;
 	font-size: 15px;
 	display: inline;
-	font-family: "Fixed";
 }
 
 #content {
-	border-bottom: 1px solid #4D4D4D;
+	border-bottom: 1px solid #3D3D3D;
 }
 
 /*
@@ -65,9 +65,8 @@ body {
 #header #avatar {
 	width: 75px;
 	height: 75px;
-	margin-top: 10px;
 	background-image: url("/avatar.jpg");
-	border: 2px solid #4D4D4D;
+	border: 2px solid #3D3D3D;
 	float: right;
 }
 
@@ -93,7 +92,8 @@ body {
 	height: 37px;
 	margin: 0;
 	padding: 0;
-	border-top: 2px solid #4D4D4D;
+	border-top: 1px solid #3D3D3D;
+	border-bottom: 1px solid #3D3D3D;
 }
 
 #nav li, #nav ul {
@@ -209,8 +209,10 @@ body {
 	padding: 0;
 }
 
-.blog #content li {
-	list-style: circle red;
+.blog #content ul {
+	list-style: none;
+	margin-left: 10px;
+	padding: 0;
 }
 
 .date {
@@ -248,7 +250,7 @@ body {
 
 #footer {
 	width: 100%;
-	height: 7px;
+	height: 2px;
 	margin: 0;
 	padding: 5px;
 	font-size: 12px;
