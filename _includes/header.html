@@ -1,10 +1,10 @@
 <div id="header">
-	<div id="top"></div>
 	<div id="head">
 		<a href="/index.html"><h1><span class="color1">pewniak</span><span class="color3">747</span></h1></a>
 		{% if page.description %}
 		<h2>&raquo;&nbsp;{{ page.description }}</h2>
+		{% else %}
+		<h2>&raquo;&nbsp;{{ page.title }}</h2>
 		{% endif %}
-		<div id="avatar"></div>
 	</div>
 </div>
