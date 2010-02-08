@@ -46,7 +46,7 @@ body {
 	height: 140px;
 	margin: 0;
 	padding: 10px 0 0 0;
-	background-image: url("/header.png");
+	/*background-image: url("/header.png");*/
 	background-position: right;
 	background-repeat: no-repeat;
 }
@@ -142,6 +142,15 @@ body {
 	background-color: #C03232;
 }
 
+#nav #snippets {
+	color: #A72FD4;
+}
+
+#nav #snippets:hover {
+	color: #ffffff;
+	background-color: #A72FD4;
+}
+
 #nav #projects {
 	color: #4E94D8;
 }
@@ -184,6 +193,10 @@ body {
 	font-weight: bold;
 }
 
+#content a:hover {
+	color: #BAE242;
+}	
+
 #content p {
 	margin: 7px 0 7px 0;
 }
@@ -219,20 +232,31 @@ body {
 	margin: 0;
 }
 
-.blog #content h2 {
+.blog #content h2, .snippets #content h2 {
 	font-size: 1em;
 	margin: 0;
 	padding: 0;
 }
 
-.blog #content ul {
+.blog #content ul, .snippets #content ul {
 	list-style: none;
 	margin-left: 10px;
 	padding: 0;
 }
 
+.snippets #content li {
+	border-bottom: 1px solid #4D4D4D;
+	padding: 10px;
+}
+
+.snippets #content h1 {
+	color: #A72FD4;
+	margin: 0;
+}
+
 .date {
 	font-size: 0.7em;
+	
 }
 
 .me #content h1 {
@@ -249,7 +273,7 @@ body {
 	border-left: 3px solid #a0d500;
 }
 
-.post #content pre {
+pre, code {
 	padding: 5px 0 5px 10px;
 	background-color: #232323;
 }
@@ -260,9 +284,10 @@ body {
 	background-color: #4D4D4D;
 }
 
-.post #content .terminal {
+.terminal {
 	border: 1px dashed #7F7F7F;
 }
+
 
 #footer {
 	width: 100%;
