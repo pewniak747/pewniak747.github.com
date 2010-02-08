@@ -13,6 +13,8 @@ body {
 	margin: auto;
 	padding: 0 0 15px 15px;
 	border: 1px solid #3D3D3D;
+	-webkit-border-radius: 0 0 15px 15px; 
+	-moz-border-radius: 0 0 15px 15px;
 }
 
 #top {
@@ -32,6 +34,7 @@ body {
 	letter-spacing: -5px;
 	color: #a0d500;
 	font-family: "Verdana";
+	text-shadow: 1px 1px 2px #4D4D4D;
 }
 
 #header h2 {
@@ -59,6 +62,9 @@ body {
 	padding: 3px;
 	background-color: #292929;
 	border: 1px solid #1A1A1A;
+	-webkit-border-radius: 6px; 
+	-moz-border-radius: 6px;
+
 }
 
 #content {
@@ -105,6 +111,7 @@ body {
 	padding: 0;
 	border-top: 1px solid #3D3D3D;
 	border-bottom: 1px solid #3D3D3D;
+	background-color: #373737;
 	font-family: "Sans";
 }
 
@@ -122,6 +129,9 @@ body {
 	float: left;
 	padding: 10px;
 	margin: 0;
+}
+#nav a:hover {
+	text-shadow: 1px 1px 2px #4D4D4D;
 }
 
 #nav #home {
