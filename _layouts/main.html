@@ -7,8 +7,9 @@
 		<meta http-equiv="content-language" content="en" />
 		<link rel="stylesheet" href="/css/style.css" type="text/css" />
 		<link rel="stylesheet" href="/css/highlight.css" type="text/css" />
+		<script language="JavaScript" SRC="/js/jquery.js"></script>
 	</head>
-	<body class="{{ page.class }}">
+	<body class="{{ page.class }}" onload="$('.snippet').hide();">
 		<div id="container">
 			{% include header.html %}
 			{% include nav.html %}

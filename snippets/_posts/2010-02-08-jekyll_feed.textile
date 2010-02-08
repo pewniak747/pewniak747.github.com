@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jekyll feed
+title: Jekyll rss feed
 ---
 
 {% assign par1='{' %}

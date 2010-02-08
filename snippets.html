@@ -6,13 +6,16 @@ class: snippets
 ---
 <h1>code snippets</h1>
 <p>my snippet and command collection | <a href="/snippets.xml">rss</a></p>
-<ul>
+
+<dl>
 {% for post in site.categories.snippets %}
-	<li>
-    <h2 class="title">
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> 
-		</h2>
+		<dt>
+    <h2 class="title"><a href="#" onclick='$("#snippet_{{ post.title | replace: " ", "_" }}").slideToggle("fast");' title="{{ post.title }}">
+    {{ post.title }}
+    </a></h2>
+   </dt>
+   <dd class ='snippet' id='snippet_{{ post.title  | replace: " ", "_" }}'>
 		<p>{{ post.content }}</p>
-  </li>
+		</dd>
 {% endfor %}
-</ul>
+</dl>

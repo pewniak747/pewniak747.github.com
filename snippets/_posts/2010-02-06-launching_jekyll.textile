@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Launching jekyll
+title: Jekyll with server and autorefresh options enabled
 ---
-Jekyll with server and autorefresh options enabled.
 
 pre(terminal). $ jekyll --server --auto
