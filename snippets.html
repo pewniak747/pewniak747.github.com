@@ -1,0 +1,18 @@
+---
+layout: main
+title: Snippets
+description: snippets
+class: snippets
+---
+<h1>code snippets</h1>
+<p>my snippet and command collection | <a href="/feed.xml">rss</a></p>
+<ul>
+{% for post in site.categories.snippets %}
+	<li>
+    <h2 class="title">
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> 
+		</h2>
+		<p>{{ post.content }}</p>
+  </li>
+{% endfor %}
+</ul>
