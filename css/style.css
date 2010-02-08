@@ -8,7 +8,7 @@ body {
 }
 
 #container {
-	width: 800px;
+	width: 960px;
 	background-color: #353535;
 	margin: auto;
 	padding: 0 0 15px 15px;
@@ -129,9 +129,15 @@ body {
 	float: left;
 	padding: 10px;
 	margin: 0;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
 }
+
 #nav a:hover {
 	text-shadow: 1px 1px 2px #4D4D4D;
+	height: 17px;
+	border-left: 2px solid #4D4D4D;
+	border-right: 2px solid #4D4D4D;
 }
 
 #nav #home {
@@ -283,7 +289,7 @@ body {
 	border-left: 3px solid #a0d500;
 }
 
-pre, code {
+pre {
 	padding: 5px 0 5px 10px;
 	background-color: #232323;
 }
