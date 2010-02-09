@@ -2,5 +2,6 @@
 layout: post
 title: Jekyll with server and autorefresh options enabled
 ---
-
-pre(terminal). $ jekyll --server --auto
+{% highlight bash %}
+jekyll --server --auto
+{% endhighlight %}
