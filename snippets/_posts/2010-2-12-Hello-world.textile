@@ -4,7 +4,7 @@ layout: post
 title: Hello world
 ---
 
-{% highlight C++ %}
+{% highlight cpp %}
 #include<iostream>
 int main() {
 	std::cout << "Hello world!\n"
