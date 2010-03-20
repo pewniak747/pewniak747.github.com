@@ -4,15 +4,14 @@ title: Snippets
 description: snippets
 class: snippets
 ---
-<h1>code snippets</h1>
 <p>my snippet and command collection | <a href="/snippets.xml">rss</a></p>
 
 <dl>
 {% for post in site.categories.snippets %}
 		<dt>
-    <h2 class="title"><a href="#" onclick='$("#snippet_{{ post.title | replace: " ", "_" }}").slideToggle("fast");' title="{{ post.title }}">
+    <a href="#" onclick='$("#snippet_{{ post.title | replace: " ", "_" }}").slideToggle("fast");' title="{{ post.title }}">
     {{ post.title }}
-    </a></h2>
+    </a>
    </dt>
    <dd class ='snippet' id='snippet_{{ post.title  | replace: " ", "_" }}'>
 		<p>{{ post.content }}</p>
