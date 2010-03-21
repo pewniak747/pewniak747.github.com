@@ -1,12 +1,38 @@
 ---
-title: pewniak747
+title: Blog
 layout: main
-class: home
+class: blog
 ---
+<!--
+<p>
+Lorem ipsum dolor <a href="#">consectetur adipiscing</a> sit amet, elit. Nam placerat purus quis purus viverra scelerisque. Quisque ac nisi in leo facilisis vestibulum. Pellentesque gravida lectus ac leo auctor luctus. Donec vel pellentesque metus. Pellentesque dapibus adipiscing quam, sed molestie lacus ullamcorper a. Nam non risus dui. Duis mi tortor, molestie at dictum ut, condimentum quis massa. Cras non nisl nisl, sit amet suscipit sem. Mauris eu luctus nisi. Donec non ligula id ante bibendum feugiat a quis eros.
+</p>
+<p>
+Suspendisse consequat porta est, ut porttitor nisi tempor adipiscing. Vivamus dignissim lobortis posuere. Vestibulum ac ultrices nunc. Nunc dapibus feugiat lacus a imperdiet. Praesent tempor semper lacinia. Donec vitae magna in ligula rhoncus fringilla ac at nisi. Integer tempor ligula non tortor malesuada ornare. Quisque a lacus neque. Vestibulum cursus laoreet enim, eget viverra quam hendrerit nec. Aenean ultrices elit in lectus aliquet sit amet commodo urna sagittis. Quisque mi lorem, auctor a gravida mollis, dapibus eget libero. Etiam posuere hendrerit nibh, ac posuere sapien tempor ut. In posuere metus quis risus pretium malesuada. Sed auctor ultricies odio ut porta. Aenean sed libero vel ligula eleifend faucibus nec quis tortor. Sed fringilla elementum mi in laoreet. Nulla facilisi. Nulla massa ante, auctor sed convallis in, varius eu leo.
+</p>
 
-<p>My name is Tomasz 'pewniak747' Pewiński and i'm a student of second grade of High School. See <a href="me.html">about me</a> for more details.</p>
+<p>
+Etiam sit amet ligula tellus. Suspendisse consequat <a href="#">mauris</a> vel risus consequat porttitor vel id ligula. Nunc vestibulum scelerisque convallis. Donec pharetra eros ut ligula bibendum pretium. Aenean enim justo, luctus vitae luctus quis, hendrerit a velit. Etiam enim ligula, consequat sed gravida et, consectetur a lorem. Aliquam diam mi, malesuada viverra tempor in, dapibus vitae massa. Morbi eu nunc augue, in tincidunt ligula. Pellentesque et odio eros. Nulla vehicula, magna a sollicitudin pellentesque, metus magna adipiscing velit, quis fringilla orci turpis vel lacus. Integer congue sagittis dolor sit amet tempor. Mauris ligula orci, pretium eget lacinia eu, gravida nec est. Ut volutpat urna vel elit facilisis condimentum.
+</p>
+<p>
+Donec consectetur sollicitudin leo, in mollis ante posuere non. Praesent nec eros purus, a suscipit diam. Phasellus mauris mauris, fringilla ut interdum id, aliquet vel velit. Nam sit amet diam risus, in placerat mauris. Cras volutpat, augue sit amet volutpat molestie, ipsum arcu ornare sapien, a ultrices libero ligula a erat. Morbi fermentum, nisi in auctor condimentum, nisi nisl commodo enim, sed bibendum velit dui sed leo. Cras mi nibh, vulputate eget blandit id, gravida non urna. In viverra tincidunt eros, quis aliquet tortor fermentum in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc sit amet semper sapien. Mauris feugiat velit id nunc condimentum eu suscipit magna faucibus. Donec nunc libero, gravida ac dictum a, accumsan sed lorem. Maecenas fermentum felis vel diam convallis ac feugiat erat ornare. Aliquam varius erat sit amet sem suscipit lobortis.
+</p>
+<p>
+Nunc semper eros sed leo ornare nec tincidunt erat pellentesque. Nam neque turpis, dictum a blandit a, pharetra ut dolor. Nulla eleifend tincidunt sapien, eget eleifend turpis porttitor eget. Curabitur tellus odio, tempor a sodales ut, dignissim sit amet nibh. Mauris dignissim arcu in velit tristique gravida. Praesent nisi leo, commodo et fermentum quis, fermentum ut justo. Ut vel felis mattis tortor vehicula molestie in quis odio. Suspendisse lorem elit, aliquam ac tincidunt non, facilisis congue neque. Morbi id magna lorem. Nulla facilisi. Nullam nec sapien nunc, eu sodales metus. Phasellus sapien mi, blandit id tempor vitae, aliquam ac dolor. Phasellus vel porta libero. Aliquam turpis sapien, tincidunt vitae pulvinar et, vulputate sed metus. Nullam luctus, metus vitae pulvinar tristique, quam magna venenatis metus, non aliquam dolor mi in mi. Suspendisse scelerisque hendrerit convallis. Nam scelerisque elementum nisi, in euismod tellus fringilla consectetur. Integer at massa erat. Sed accumsan lacus vitae dui tincidunt lacinia. Aenean massa dui, hendrerit eu blandit quis, congue a est.
+</p>
+-->
 
-<p>Im interested in computer programming, especially in languages like C++ and Ruby. My biggest project so far is <a href="http://pewniak747.github.com/dicto">dicto</a> - "a tool to help you learn vocabulary". I also like hacking in *NIX systems. To see all my projects visit <a href="projects.html">projects page</a>.</p>
+{% for post in site.categories.blog limit:1 %}
+	<h2><a href="{{ post.url }}">Latest: {{ post.title }}</a></h2>
+{% endfor %}
 
-<p>On my <a href="blog.html">blog</a> I'll be publishing some interesting informations, usually related to programming, or useful tips for getting things done. Pop over at any time to see what I'm doing.</p>
+<ul>
+{% for post in site.categories.blog %}
+	<li>
+    <span class="date">{{ post.date | date: '%d %b %Y' }}</span>&nbsp;
+    <a href="{{ post.url }}" title="{{ post.title }}"><span class="title">{{ post.title }}</span></a> 
+  </li>
+{% endfor %}
+</ul>
 
+<em><a href="/blog.xml">rss feed</a></em>

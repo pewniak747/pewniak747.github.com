@@ -1,5 +1,6 @@
 body {
-	background-color: #88B304;
+	background-color: #fff;
+	color: #4D4D4D;
 }
 
 a {
@@ -10,15 +11,9 @@ a {
 
 a:hover {
 	color: #fff;
-	background-color: #88B304;
+	background-color: #91C000;
 }
 
-.container {
-	background-color: #FCFCFC;
-}
-.header {
-	border-bottom: 1px solid #BFBFBF;
-}
 
 .header h1 {
 	color: #4D4D4D;
@@ -48,6 +43,7 @@ a:hover {
 
 body.page_home a#home,
 body.page_blog a#blog,
+body.page_ a#blog,
 body.page_projects a#projects,
 body.page_snippets a#snippets,
 body.page_me a#me {
