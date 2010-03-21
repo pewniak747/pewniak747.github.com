@@ -25,7 +25,7 @@ Nunc semper eros sed leo ornare nec tincidunt erat pellentesque. Nam neque turpi
 {% for post in site.categories.blog limit:1 %}
 	<h2><a href="{{ post.url }}">Latest: {{ post.title }}</a></h2>
 {% endfor %}
-<p>recent posts</p>
+<p>recent posts <em><a href="/blog.xml">rss feed</a></em></p>
 <ul>
 {% for post in site.categories.blog %}
 	<li>
@@ -34,4 +34,3 @@ Nunc semper eros sed leo ornare nec tincidunt erat pellentesque. Nam neque turpi
 {% endfor %}
 </ul>
 
-<em><a href="/blog.xml">rss feed</a></em>

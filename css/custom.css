@@ -16,18 +16,11 @@ a:hover {
 
 .header h1 {
 	color: #4D4D4D;
-	text-shadow: 0 0 5px #BFBFBF;
+	text-shadow: 0 0 2px #BFBFBF;
 	font-size: 55px;
 	letter-spacing: -5px;
 	font-weight: bold;
 	padding-top: 20px;
-	margin: 0;
-}
-
-.header h2 {
-	
-	margin-left: 180px;
-	
 }
 
 .nav li {
@@ -53,6 +46,7 @@ body.page_blog a#blog,
 body.page_ a#blog,
 body.page_projects a#projects,
 body.page_snippets a#snippets,
+body.page_links a#links,
 body.page_me a#me {
 	background-color: #88B304;
 	color: #fff;
