@@ -14,13 +14,20 @@ a:hover {
 	background-color: #91C000;
 }
 
-
 .header h1 {
 	color: #4D4D4D;
+	text-shadow: 0 0 5px #BFBFBF;
 	font-size: 55px;
 	letter-spacing: -5px;
 	font-weight: bold;
 	padding-top: 20px;
+	margin: 0;
+}
+
+.header h2 {
+	
+	margin-left: 180px;
+	
 }
 
 .nav li {
@@ -52,7 +59,7 @@ body.page_me a#me {
 }
 
 .content {
-	padding-top: 15px;
+	padding: 15px 0 15px 0;
 }
 
 .content h1 {
@@ -60,11 +67,22 @@ body.page_me a#me {
 	color: #4D4D4D;
 }
 
-.footer {
-	border-top: 1px solid #BFBFBF;
+.content p {
+	font-size: 1.3em;
 }
 
-body.snippets dd {
+.footer {
+	border-top: 1px solid #E5E5E5;
+	letter-spacing: -1px;
+}
+
+ pre {
 	border: 1px dashed #7F7F7F;
-	background-color: #232323;
+	background-color: #E5E5E5;
+	padding: 5px;
+	margin: 5px 0;
+}
+
+#license:hover {
+	background-color: #fff;
 }
