@@ -1,18 +1,16 @@
 ---
 layout: main
 title: My projects
-description: my projects
 class: projects
 ---
 
 <dl>
-		<dt>dicto</dt>
-	<dd>
-		<p>Dicto is free, open-source software for learning vocabulary. It provides simple, intuitive user interface and two testing modes. <a href="http://pewniak747.github.com/dicto">http://pewniak747.github.com/dicto</a></p> 
+	<dt>dicto</dt>
+	<dd><p>Dicto is free, open-source software for learning vocabulary. It provides simple, intuitive user interface and two testing modes. <a href="http://github.com/pewniak747/dicto">"http://github.com/pewniak747/dicto</a></p> 
 	</dd>
 	
 	<dt>snippet-gem</dt>
-	<dd><p>Simple gem used for quick jekyll-and-git-based snippet posting for my blog.<a href="http://pewniak747.github.com/snippet-gem">http://pewniak747.github.com/snippet-gem</a></p>
+	<dd><p>Simple gem used for quick jekyll-and-git-based snippet posting for my blog.<a href="http://github.com/pewniak747/snippet-gem">http://github.com/pewniak747/snippet-gem</a></p>
 	</dd>
 
 	<dt>rubido</dt>
@@ -22,5 +20,4 @@ class: projects
 	<dt>wishlist</dt>
 	<dd><p>Simple list management rails app with neat interface. <a href="http://github.com/pewniak747/wishlist">http://github.com/pewniak747/wishlist</a></p>
 	</dd>
-
 </dl>

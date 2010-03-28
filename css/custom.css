@@ -22,22 +22,25 @@ a:hover {
 	font-weight: bold;
 	padding-top: 20px;
 }
+.header h1:hover {
+	color: #5E5E5E;
+}
 
 .nav li {
 	margin: 0;
 	padding: 0;
 	text-align: left;
 	list-style: none;
+	overflow: hidden;
 }
 
-.nav ul {margin: 0;padding:0;	border-right: 1px solid #BFBFBF;}
+.nav ul {margin: 0;padding:0;	border-right: 1px solid #E5E5E5;}
 
 .nav a {
 	margin: 0;
 	padding:0;
 	padding: 0 5px 0 5px;
-	font-size: 25px;
-	letter-spacing: -2px;
+	font-size: 20px;
 	display: block;
 }
 
@@ -53,26 +56,45 @@ body.page_me a#me {
 }
 
 .content {
-	padding: 15px 0 15px 0;
+	padding:  0;
 }
 
 .content h1 {
 	font-weight: bold;
+	font-size: 2.5em;
 	color: #4D4D4D;
 }
 
+.content h2 {
+	font-weight: bold;
+	color: #4D4D4D;
+}
+
+.page_ .content h2 {
+	margin: 10px 0 0 0;
+	}
+
 .content p {
+	font-size: 1.2em;
+	margin: 5px 0;
+}
+
+.content dt {
 	font-size: 1.3em;
 }
 
+.page_blog ul {
+	list-style: none;
+}
+
 .footer {
-	border-top: 1px solid #E5E5E5;
+	/*border-top: 1px solid #E5E5E5;*/
 	letter-spacing: -1px;
 }
 
- pre {
-	border: 1px dashed #7F7F7F;
-	background-color: #E5E5E5;
+pre {
+	border: 1px dotted #7F7F7F;
+	background-color: #EDEDFF;
 	padding: 5px;
 	margin: 5px 0;
 }
